@@ -76,7 +76,7 @@ public class Calculator {
 	 * @param n
 	 * @return factorial
 	 */
-	public int factorial(int n) {
+	public static int factorial(int n) {
 
 		if (n >= 0 && n < 19) {
 
