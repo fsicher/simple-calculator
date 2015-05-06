@@ -7,7 +7,7 @@ public class Calculator {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return
+	 * @return sum
 	 */
 	public static double add(double a, double b) {
 		return a + b;
@@ -18,7 +18,7 @@ public class Calculator {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return
+	 * @return difference
 	 */
 	public static double sub(double a, double b) {
 		return a - b;
@@ -29,7 +29,7 @@ public class Calculator {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return
+	 * @return product
 	 */
 	public static double mul(double a, double b) {
 		return a * b;
@@ -40,7 +40,7 @@ public class Calculator {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return
+	 * @return quotient
 	 */
 	public static double div(double a, double b) {
 
