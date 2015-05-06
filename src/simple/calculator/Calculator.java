@@ -60,7 +60,7 @@ public class Calculator {
 	 */
 	public static boolean primNumber(long number) {
 
-		for (long i = 2; i < (long) Math.sqrt(number); i++) {
+		for (long i = 2; i <= (long) Math.sqrt(number); i++) {
 			if (number % i == 0) {
 				return false;
 			}
