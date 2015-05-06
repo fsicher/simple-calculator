@@ -52,4 +52,21 @@ public class Calculator {
 		}
 	}
 
+	/**
+	 * Checks if the given number is a prim number.
+	 * 
+	 * @param number
+	 * @return
+	 */
+	public static boolean primNumber(long number) {
+
+		for (long i = 2; i < (long) Math.sqrt(number); i++) {
+			if (number % i == 0) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
 }
