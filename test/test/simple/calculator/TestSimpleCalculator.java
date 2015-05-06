@@ -1,0 +1,51 @@
+package test.simple.calculator;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+import simple.calculator.Calculator;
+
+public class TestSimpleCalculator {
+
+	@Test
+	public void testAdd() {
+
+		int a = 10;
+		int b = 20;
+		int sum = a + b;
+
+		assertTrue(sum == Calculator.add(a, b));
+	}
+
+	@Test
+	public void testSub() {
+
+		int a = 10;
+		int b = 20;
+		int dif = a - b;
+
+		assertTrue(dif == Calculator.sub(a, b));
+	}
+
+	@Test
+	public void testMul() {
+
+		int a = 10;
+		int b = 20;
+		int prod = a * b;
+
+		assertTrue(prod == Calculator.mul(a, b));
+	}
+
+	@Test
+	public void testDiv() {
+
+		int a = 10;
+		int b = 20;
+		double quo = (double) a / b;
+
+		assertTrue(quo == Calculator.div(a, b));
+	}
+
+}
