@@ -69,4 +69,32 @@ public class Calculator {
 		return true;
 	}
 
+	/**
+	 * Calculates factorial for the given number. The allowed number range is: 0
+	 * <= n <= 19
+	 * 
+	 * @param n
+	 * @return factorial
+	 */
+	public int factorial(int n) {
+
+		if (n >= 0 && n < 19) {
+
+			if (n == 0 || n == 1) {
+				return 1;
+			} else {
+				int fact = 1;
+
+				for (int i = 1; i <= n; i++) {
+					fact *= i;
+				}
+
+				return fact;
+			}
+
+		} else {
+			throw new IllegalArgumentException("Allowed Range: 0 <= n <= 19");
+		}
+	}
+
 }
