@@ -1,6 +1,10 @@
 package test.simple.calculator;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+
+import java.util.Arrays;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -46,6 +50,18 @@ public class TestSimpleCalculator {
 		double quo = (double) a / b;
 
 		assertTrue(quo == Calculator.div(a, b));
+	}
+
+	@Test
+	public void testPrimNumber() {
+
+		List<Integer> l = Arrays.asList(3, 5, 7, 11, 17, 19, 37);
+
+		for (int i : l) {
+			assertTrue(Calculator.primNumber(i));
+		}
+
+		assertFalse(Calculator.primNumber(25));
 	}
 
 }
