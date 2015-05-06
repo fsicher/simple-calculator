@@ -64,4 +64,14 @@ public class TestSimpleCalculator {
 		assertFalse(Calculator.primNumber(25));
 	}
 
+	@Test
+	public void testFactorial() {
+
+		assertTrue(Calculator.factorial(0) == 1);
+		assertTrue(Calculator.factorial(1) == 1);
+		assertTrue(Calculator.factorial(3) == 6);
+		assertTrue(Calculator.factorial(5) == 120);
+
+	}
+
 }
